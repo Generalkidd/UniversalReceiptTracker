@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="ReceiptTracker.MainPage_Mobile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ReceiptTracker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListBox x:Name="receiptsList" HorizontalAlignment="Left" Height="352" Margin="10,30,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="receiptsList_SelectionChanged"/>
+        <Button x:Name="quickAddBtn" Content="Quick Add" HorizontalAlignment="Left" Margin="47,490,0,0" VerticalAlignment="Top" Click="quickAddBtn_Click"/>
+        <Button x:Name="addBtn" Content="Add" HorizontalAlignment="Left" Margin="47,557,0,0" VerticalAlignment="Top" Width="89" Click="addBtn_Click"/>
+        <Button x:Name="editBtn" Content="Edit" HorizontalAlignment="Left" Margin="214,490,0,0" VerticalAlignment="Top" Width="89" Click="editBtn_Click"/>
+        <Button x:Name="deleteBtn" Content="Delete" HorizontalAlignment="Left" Margin="214,557,0,0" VerticalAlignment="Top" Width="89" Click="deleteBtn_Click"/>
+        <Button x:Name="viewBtn" Content="View" HorizontalAlignment="Left" Margin="137,417,0,0" VerticalAlignment="Top" Width="89" Click="viewBtn_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Receipt Tracker" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
